@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="suite" parallel="classes">
+<listeners>
+<listener class-name="Testnglisner"/>
+</listeners>
+<test name="test">
+<parameter name="browser" value="chrome"/>
+<classes>
+<class name="Functionallibrary.Testscript"/>
+</classes>
+</test>
+<test name="test1">
+<parameter name="browser" value="firefox"/>
+<classes>
+<class name="Functionallibrary.Testscript"/>
+</classes>
+</test>
+</suite>
